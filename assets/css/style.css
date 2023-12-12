@@ -195,8 +195,7 @@ text-shadow: 1px 1px 3px 5px var(--text_shadow);
   position:relative;
 }
 
-.grid_card #recent{grid-area: recent;
-}
+.grid_card #recent{grid-area: recent;}
 .grid_card #card2{grid-area: 2;}
 .grid_card #card3{grid-area: 3;}
 .grid_card #card4{grid-area: 4;}
@@ -261,4 +260,62 @@ color:var(--black_accents);
 a{
   text-decoration: none;
   color: var(--black_accents);
+}
+
+
+/* Screen size Adjustments */
+@media only screen and (min-width: 1024px) {
+
+  .hero_grid p,
+  pre{
+    margin-top: 30px;
+    font-size: 8rem;
+    line-height: 2rem;
+  }
+
+  .hero_grid{
+    padding-top: 5 px;
+    position: absolute;
+    display: grid;
+    height: 530px;
+    right: 10px;
+    left:10px;
+    grid-template-areas: 'name hero_img'
+                         'name hero_img'
+                         'hero_sub hero_img'
+                         ;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 0px 0px;
+  }
+
+  .hero-banner div h3{
+    font-size: 2rem;
+    line-height: 10rem;
+  }
+
+  #img_photo{
+    margin-bottom: 0px;
+    right:0;
+    grid-area: hero_img;
+    align-self: right;
+    position:sticky;
+    height:500px;
+    width:500px;
+    background-image:url(../images/IMG_6815.png);
+    background-position: center ;
+    background-size: cover;
+  }
+  
+  .work_grid{
+    grid-template-areas: 'recent recent '
+                         'recent recent'   
+                         '3 3 3';
+  } 
+
+  .grid_card,
+  .figure{
+    height: 600px;
+    width: 100%;
+  }
 }
