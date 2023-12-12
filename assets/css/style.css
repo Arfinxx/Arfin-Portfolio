@@ -6,7 +6,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Quicksand', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
@@ -62,15 +62,16 @@ header{
 }
 
 /* Hero banner image and text */
-.hero-banner{
+#banner{
   padding: 8px;
   margin-top: 12px;
   height: 700px;
+  background-image:url();
 }
 .hero-banner div{
   position: relative;
   width: auto;
-  background-image: url("/images/02-hero-bg.jpg");
+  
 }
 
 p{
